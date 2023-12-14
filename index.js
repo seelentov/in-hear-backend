@@ -38,7 +38,7 @@ mongoose
 
 const app = express()
 
-app.use(cors(CONFIG.cors))
+app.use(cors())
 app.post(PATH.UPLOAD, ...storageQuery)
 
 app.use(express.json())
